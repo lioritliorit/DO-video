@@ -13,7 +13,6 @@ import org.springframework.data.redis.core.StringRedisTemplate; // 【修复】�
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
 import java.io.IOException;
