@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
-//加上这个是为了防止跨域问题漏网
+
 @CrossOrigin(originPatterns = "*", allowCredentials = "true")
 public class UserController {
 

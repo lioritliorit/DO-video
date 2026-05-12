@@ -190,7 +190,7 @@ public class MediaController {
         if (media.getUserId() != null) {
             String cacheKey = "media:list:user:" + media.getUserId();
             redisTemplate.delete(cacheKey);
-            System.out.println("缓存已清除: " + cacheKey);
+            System.out.println("缓存清除: " + cacheKey);
         }
 
         return "删除成功";

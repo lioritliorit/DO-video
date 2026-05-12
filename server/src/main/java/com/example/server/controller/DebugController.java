@@ -68,7 +68,7 @@ public class DebugController {
             //初始化：每 1 分钟产生 10 个令牌 (RateType.OVERALL 全局, OVER_CLIENT 是单机)
             rateLimiter.trySetRate(org.redisson.api.RateType.OVERALL, 10, 1, org.redisson.api.RateIntervalUnit.MINUTES);
 
-            //尝试获取 1 个令牌
+            
             if (!rateLimiter.tryAcquire(1)) {
                 return "⚠️ 系统繁忙(限流中)，请 1 分钟后再试！";
             }
